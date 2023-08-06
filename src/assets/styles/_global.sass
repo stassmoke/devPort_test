@@ -1,0 +1,67 @@
+@import '_normalize.sass'
+@import '_variables.sass'
+
+    
+html, body 
+  height: 100%
+  margin: 0
+
+html
+    font-size: 10px!important
+    background: $darkGrey
+
+body
+    font-family: 'Roboto', sans-serif!important
+    color: #B6BEC2
+
+input,
+select
+    font-size: 1.7rem
+    color: $textGreyDark
+    font-weight: 400
+    padding: 10px
+    border: 1px solid transparent
+    border-radius: 5px
+
+    &.invalid
+        border-color: red
+
+ul, li 
+  margin: 0
+  padding: 0
+  list-style: none
+
+
+button
+    box-shadow: none
+    border: none
+    color: white
+
+.layout
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+
+main
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    padding: 0 3rem
+    background-color: $grey
+
+    & > *
+        flex-grow: 1
+
+.header,
+.footer
+    background-color: $darkGrey
+
+.btn
+    font-size: 1.7rem
+    font-weight: 500
+    background-color: $green
+    padding: 10px 30px
+    border-radius: 5px
+
+    &:disabled
+        background-color: $darkGrey
